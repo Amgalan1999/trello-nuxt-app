@@ -1,0 +1,7 @@
+body {
+  line-height: 1.5;
+  tab-size: 4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-feature-settings: normal;
+  min-height: 100vh;
+}

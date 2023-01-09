@@ -8,17 +8,32 @@ export default defineNuxtConfig({
             viewport: 'width=devide-width, initial-scale=1',
             meta: [
                 { hid: "description", name: "description", content: "" },
+            ],
+            script: [
+                { src: "https://unpkg.com/phosphor-icons" }
             ]
         }
     },
 
+    css: [
+        '@/assets/styles/main.css'
+    ],
+
     modules: ['@nuxtjs/tailwindcss'],
 
     tailwindcss: {
-        cssPath: '~/assets/css/tailwind.css',
+        cssPath: '~/assets/styles/tailwind.css',
         configPath: '~/tailwind.config.js',
         exposeConfig: false,
         injectPosition: 0,
         viewer: true,
+    },
+
+    runtimeConfig: {
+        DATABASE_URL: process.env.DATABASE_URL
+    },
+
+    nitro: {
+        plugins: ["~/server/db/index.ts"]
     },
 })

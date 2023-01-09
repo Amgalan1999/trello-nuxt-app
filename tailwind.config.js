@@ -9,7 +9,9 @@ module.exports = {
     "./app.{vue,js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      
+    },
   },
   plugins: [],
 };

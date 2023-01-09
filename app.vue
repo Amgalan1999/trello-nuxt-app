@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="block min-h-screen">
     <NuxtLayout>
-      <NuxtPage />
+      <NuxtLoadingIndicator color="green"/>
+      <NuxtPage/>
     </NuxtLayout>
   </div>
 </template>
