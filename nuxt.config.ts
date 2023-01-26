@@ -5,12 +5,12 @@ export default defineNuxtConfig({
             title: 'Trello',
             titleTemplate: '%s • Personal clone app',
             charset: 'utf-8',
-            viewport: 'width=devide-width, initial-scale=1',
+            viewport: 'width=device-width, initial-scale=1',
             meta: [
                 { hid: "description", name: "description", content: "" },
             ],
             script: [
-                { src: "https://unpkg.com/phosphor-icons" }
+                { src: "https://unpkg.com/phosphor-icons" },
             ]
         }
     },
